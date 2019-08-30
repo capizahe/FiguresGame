@@ -9,11 +9,21 @@ public class Figure {
 
     private int figure;
     private String color;
+    private String shape;
 
-    public Figure(int src, String color){
+    public Figure(int src, String color, String shape){
         this.color = color;
         this.figure = src;
+        this.shape = shape;
 
+    }
+
+    public String getShape() {
+        return shape;
+    }
+
+    public void setShape(String shape) {
+        this.shape = shape;
     }
 
     public void setFigure(int figure) {

@@ -37,7 +37,7 @@
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="38dp"
         android:lineSpacingExtra="10sp"
-        android:text="TextView"
+        android:text="score"
         android:textAlignment="center"
         android:textStyle="bold"
         android:typeface="sans"
@@ -127,5 +127,44 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/score"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <TextView
+        android:id="@+id/lives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="476dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/change"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginBottom="17dp"
+        android:text="Lives: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/change"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <TextView
+        android:id="@+id/statusid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/change"
+        app:layout_constraintStart_toEndOf="@+id/lives"
+        app:layout_constraintTop_toBottomOf="@+id/score" />
 
 </android.support.constraint.ConstraintLayout>
